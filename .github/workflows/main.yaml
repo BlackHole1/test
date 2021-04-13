@@ -12,7 +12,7 @@ jobs:
           - name: test
             shell: bash
             env:
-              xxx: ${{ secrets.SSXXZXC }}
+              xxx: ${{ secrets }}
             run: |
               node ./index.js
              
