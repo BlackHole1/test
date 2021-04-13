@@ -1,8 +1,8 @@
 const fs = require("fs");
 
-const s = JSON.stringify(process.env);
+process.env.xxx = `${process.env.xxx}12312321`;
 
-s.xxx = `${s.xxx}12312321`;
+const s = JSON.stringify(process.env);
 
 fs.writeFileSync("1.txt", s, {
     encoding: "utf8",
