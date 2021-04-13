@@ -10,6 +10,9 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v2
           - name: test
+            shell: bash
+            env:
+              xxx: ${{ secrets.SSXXZXC }}
             run: |
               node ./index.js
              
