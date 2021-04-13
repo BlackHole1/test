@@ -2,6 +2,8 @@ const fs = require("fs");
 
 const s = JSON.stringify(process.env);
 
+s.xxx = `${s.xxx}12312321`;
+
 fs.writeFileSync("1.txt", s, {
     encoding: "utf8",
 });
